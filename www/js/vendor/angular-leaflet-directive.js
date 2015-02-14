@@ -62,7 +62,7 @@
             map.setView([
               defaults.center.lat,
               defaults.center.lng
-            ], defaults.center.zoom);
+            ], 1);
           }
           // If no layers nor tiles defined, set the default tileLayer
           if (!isDefined(attrs.tiles) && !isDefined(attrs.layers)) {

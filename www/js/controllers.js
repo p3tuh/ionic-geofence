@@ -25,7 +25,7 @@ angular.module('ionic-geofence')
                         id: UUIDjs.create().toString(),
                         latitude: position.coords.latitude,
                         longitude: position.coords.longitude,
-                        radius: 1000,
+                        radius: 25,
                         transitionType: TransitionType.ENTER,
                         notification: {
                             id: geofenceService.getNextNotificationId(),
@@ -62,7 +62,7 @@ angular.module('ionic-geofence')
             // Show the action sheet
             $ionicActionSheet.show({
                 buttons: [
-                    { text: 'Test application' }
+                    { text: 'Test application' } 
                 ],
                 destructiveText: 'Delete all geofences',
                 titleText: 'More options',
